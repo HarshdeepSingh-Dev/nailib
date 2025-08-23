@@ -1,28 +1,36 @@
+import ClientReviews from "@/components/sections/ClientReviews";
+import CtaSection from "@/components/sections/CtaSection";
+import FAQSection from "@/components/sections/FaqSection";
 import Hero from "@/components/sections/Hero";
-import Image from "next/image";
+import OurEducators from "@/components/sections/OurEducators";
+import OurServicesSection from "@/components/sections/OurServices";
+import WhyChoose from "@/components/sections/WhyChoose";
 
 export default function Home() {
   return (
     <div>
       {/* hero section */}
-      <Hero/>
+      <Hero />
 
       {/* why choose us */}
-
-      {/* what we offer or our services state all courses avl */}
+      <WhyChoose />
 
       {/* our educators */}
+      <OurEducators />
 
-      {/* our benefits this section will be 4 section long,
-       we'll create this with cards stack over effect  */}
+      {/* client reviews */}
+      <ClientReviews />
 
-       {/* connect with us form */}
+      {/* what we offer or our services state all courses avl */}
+      <OurServicesSection/>
 
-        {/* client reviews */}
 
-        {/* register or cta */}
+      {/* register or cta */}
+      <CtaSection />
 
-        {/* news letter */}
+      {/* faq */}
+      <FAQSection/>
+      
     </div>
   );
 }

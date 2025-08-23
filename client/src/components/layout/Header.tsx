@@ -63,7 +63,7 @@ export default function Header() {
                         exit={{ opacity: 0, x: 20, y: -20, scale: 0.80 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        <nav className="md:hidden font-semibold absolute right-4 bg-indigo-50/96 rounded-lg backdrop-blur-xl border border-white/30 shadow-lg px-6 py-4 flex flex-col gap-4">
+                        <nav className="md:hidden font-semibold absolute right-4 bg-slate-100 rounded-lg backdrop-blur-xl border border-white/30 shadow-lg px-6 py-4 flex flex-col gap-4">
                             <a href="#features" className="text-gray-800">Features</a>
                             <a href="#pricing" className="text-gray-800">Pricing</a>
                             <a href="#about" className="text-gray-800">About</a>
