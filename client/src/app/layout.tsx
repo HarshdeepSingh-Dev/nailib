@@ -1,8 +1,6 @@
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-
+import LayoutWrapper from "./LayoutWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,9 +27,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jakarta.variable} antialiased`}
       >
-        <Header/>
-        {children}
-        <Footer/>
+        <LayoutWrapper>{children}</LayoutWrapper>
         
       </body>
     </html>

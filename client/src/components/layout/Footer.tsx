@@ -19,36 +19,40 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* Footer text categories */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 flex-1">
-                    <div>
-                        <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Platform</div>
-                        <ul className="space-y-1 text-sm md:text-md text-slate-600">
-                            <li>Courses</li>
-                            <li>Educators</li>
-                            <li>Pricing</li>
-                        </ul>
+                <div className="flex flex-col md:flex-row gap-12">
+                    <div className="flex gap-12">
+                        <div>
+                            <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Platform</div>
+                            <ul className="space-y-1 text-sm md:text-md text-slate-600">
+                                <li>Courses</li>
+                                <li>Educators</li>
+                                <li>Pricing</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Resources</div>
+                            <ul className="space-y-1 text-sm md:text-md text-slate-600">
+                                <li>Blog</li>
+                                <li>Reviews</li>
+                                <li>Newsletter</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Resources</div>
-                        <ul className="space-y-1 text-sm md:text-md text-slate-600">
-                            <li>Blog</li>
-                            <li>Reviews</li>
-                            <li>Newsletter</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Support</div>
-                        <ul className="space-y-1 text-sm md:text-md text-slate-600">
-                            <li>Help Center</li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Legal</div>
-                        <ul className="space-y-1 text-sm md:text-md text-slate-600">
-                            <li>Privacy Policy</li>
-                            <li>Terms of Service</li>
-                        </ul>
+                    <div className="flex gap-12">
+                        <div>
+                            <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Support</div>
+                            <ul className="space-y-1 text-sm md:text-md text-slate-600">
+                                <li>Help Center</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div className="font-semibold text-gray-700 mb-2 text-sm md:text-lg">Legal</div>
+                            <ul className="space-y-1 text-sm md:text-md text-slate-600">
+                                <li>Privacy Policy</li>
+                                <li>Terms of Service</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence, Variants } from 'framer-motion';
+import Link from "next/link";
 
 // ball to header animation
 const headerVariants: Variants = {
@@ -27,22 +28,27 @@ export default function Header() {
             className="sticky top-4 z-50 mx-4 xl:max-w-7xl lg:max-w-4xl max-w-xl md:mx-auto rounded-full bg-[linear-gradient(to_right,theme(colors.slate.50),theme(colors.indigo.100))/30] backdrop-blur-lg border border-white/30 shadow-[0_0_20px_rgba(79,70,229,0.4)]">
             <div className=" mx-auto flex items-center justify-between px-6 lg:py-4 py-2">
                 {/* Logo */}
-                <div className="lg:text-2xl text-xl font-bold text-gray-900">
-                    NailIB
-                </div>
+                <Link href="/">
+                    <div className="lg:text-2xl text-xl font-bold text-gray-900">
+                        NailIB
+                    </div>
+                </Link>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8 lg:text-xl text-md font-semibold">
-                    <a href="#features" className="text-gray-800 opacity-80 hover:opacity-100 transition">Features</a>
-                    <a href="#pricing" className="text-gray-800 opacity-80 hover:opacity-100 transition">Pricing</a>
-                    <a href="#about" className="text-gray-800 opacity-80 hover:opacity-100 transition">About</a>
+                    <Link href="/" className="text-gray-800 opacity-80 hover:opacity-100 transition">Home</Link>
+                    <Link href="#courses" className="text-gray-800 opacity-80 hover:opacity-100 transition">Courses</Link>
+                    <Link href="/contact-us" className="text-gray-800 opacity-80 hover:opacity-100 transition">Contact</Link>
+                    <Link href="/dashboard" className="text-gray-800 opacity-80 hover:opacity-100 transition">Dashboard</Link>
                 </nav>
 
                 {/* CTA */}
                 <div className="hidden md:block">
-                    <button className="px-6 py-2 rounded-full bg-gray-800 text-white shadow hover:scale-105 transition">
+                    <Link href="/sign-in">
+                    <button className="px-6 py-2 rounded-full bg-gray-800 text-white shadow hover:scale-105 transition hover:cursor-pointer">
                         Get Started
                     </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -64,12 +70,15 @@ export default function Header() {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
                         <nav className="md:hidden font-semibold absolute right-4 bg-slate-100 rounded-lg backdrop-blur-xl border border-white/30 shadow-lg px-6 py-4 flex flex-col gap-4">
-                            <a href="#features" className="text-gray-800">Features</a>
-                            <a href="#pricing" className="text-gray-800">Pricing</a>
-                            <a href="#about" className="text-gray-800">About</a>
-                            <button className="mt-2 px-6 py-2 rounded-full bg-gray-800 text-white shadow">
-                                Get Started
-                            </button>
+                            <Link href="/" className="text-gray-800">Home</Link>
+                            <Link href="#courses" className="text-gray-800">Courses</Link>
+                            <Link href="/contact-us" className="text-gray-800">Contact</Link>
+                            <Link href="/dashboard" className="text-gray-800">Dashboard</Link>
+                            <Link href="/sign-in">
+                                <button className="mt-2 px-6 py-2 rounded-full bg-gray-800 text-white shadow">
+                                    Get Started
+                                </button>
+                            </Link>
                         </nav>
                     </motion.nav>
                 )}

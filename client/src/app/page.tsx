@@ -24,7 +24,6 @@ export default function Home() {
       {/* what we offer or our services state all courses avl */}
       <OurServicesSection/>
 
-
       {/* register or cta */}
       <CtaSection />
 

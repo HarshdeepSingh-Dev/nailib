@@ -70,7 +70,7 @@ const services = [
 
 const OurServicesSection = () => {
     return (
-        <section className="bg-indigo-100 py-16 px-4 md:px-8">
+        <section id="courses" className="bg-indigo-100 py-16 px-4 md:px-8">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-4xl md:text-5xl text-center font-extrabold text-gray-600 mb-4">Explore Our Courses</h2>
                 <p className="mt-3 text-xl font-semibold text-gray-400 max-w-3xl text-center mx-auto mb-12">
