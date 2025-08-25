@@ -10,7 +10,6 @@ const Page = () => {
     const [success, setSuccess] = useState(false);
 
     const onSubmit = async (data: FormData) => {
-        console.log(data);
         try {
             reset();
             setSuccess(true);

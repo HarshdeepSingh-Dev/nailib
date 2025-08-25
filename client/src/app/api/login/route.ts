@@ -9,8 +9,6 @@ export async function POST(req: Request) {
       return NextResponse.json({ message: "Missing fields" }, { status: 400 });
     }
 
-    console.log("SignIn request >>>", email, password);
-
     // Call your backend's login endpoint
     const backendRes = await axios.post(
       `${process.env.BACKEND_URL}/auth/signin`,

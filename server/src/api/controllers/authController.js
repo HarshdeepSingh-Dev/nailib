@@ -5,7 +5,6 @@ import jwt from 'jsonwebtoken';
 // Handle new user creation
 export async function register(req, res) {
     const { name, email, password, confirmPassword } = req.body;
-    console.log(name, email, password, confirmPassword);
 
     if (!name || !email || !password || !confirmPassword) {
         return res.status(400).json({ error: 'All fields are required' });
@@ -22,7 +21,6 @@ export async function register(req, res) {
         }
 
         const hashed = await hashPassword(password);
-        console.log(">>>>>>>>>>>>>>>>>>", hashed);
 
         const newUser = await User.create({
             name,

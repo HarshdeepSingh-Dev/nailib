@@ -48,7 +48,6 @@ const SignInPage = () => {
 
     try {
       const response = await axios.post("/api/login", data);
-      console.log(response.data);
       if (response.status === 200) {
         const { token, user } = response.data;
 

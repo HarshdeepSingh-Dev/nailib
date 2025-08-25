@@ -9,8 +9,6 @@ export async function POST(req: Request) {
             return NextResponse.json({ message: "Missing fields" }, { status: 400 });
         }
 
-        console.log("in api>>>>>>>>>>", name, email, password, confirmPassword);
-
         const backendRes = await axios.post(
             `${process.env.BACKEND_URL}/auth/register`,
             { name, email, password, confirmPassword },
